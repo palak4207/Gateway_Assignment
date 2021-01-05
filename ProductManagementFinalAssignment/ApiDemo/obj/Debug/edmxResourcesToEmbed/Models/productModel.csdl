@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductDbApiModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="productdetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="product_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="category_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="short_des" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="long_des" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="small_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="large_img" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ProductDbApiEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="productdetails" EntityType="Self.productdetail" />
+  </EntityContainer>
+</Schema>

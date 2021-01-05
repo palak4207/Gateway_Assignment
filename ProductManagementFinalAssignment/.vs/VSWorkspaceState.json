@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ApiDemo\\ApiDemo",
+    "\\ApiDemo\\ApiDemo\\Models",
+    "\\ProductMgmtMvc",
+    "\\ProductMgmtMvc\\ProductMgmtMvc",
+    "\\ProductMgmtMvc\\ProductMgmtMvc\\App_Data",
+    "\\ProductMgmtMvc\\ProductMgmtMvc\\App_Start",
+    "\\ProductMgmtMvc\\ProductMgmtMvc\\Controllers",
+    "\\ProductMgmtMvc\\ProductMgmtMvc\\Models"
+  ],
+  "SelectedNode": "\\ProductMgmtMvc",
+  "PreviewInSolutionExplorer": false
+}
