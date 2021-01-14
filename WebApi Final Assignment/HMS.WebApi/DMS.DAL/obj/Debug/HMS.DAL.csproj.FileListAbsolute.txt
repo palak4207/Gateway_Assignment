@@ -1,0 +1,14 @@
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\EntityFramework.dll
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\HMS.Model.dll
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\HMS.Model.pdb
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\EntityFramework.xml
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\obj\Debug\HMS.DAL.csprojAssemblyReference.cache
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\obj\Debug\HMS.DAL.csproj.CoreCompileInputs.cache
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\obj\Debug\HMS.DAL.csproj.CopyComplete
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\HMS.DAL.dll.config
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\HMS.DAL.dll
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\bin\Debug\HMS.DAL.pdb
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\obj\Debug\HMS.DAL.dll
+C:\Users\palak\source\repos\HMS.WebApi\DMS.DAL\obj\Debug\HMS.DAL.pdb
