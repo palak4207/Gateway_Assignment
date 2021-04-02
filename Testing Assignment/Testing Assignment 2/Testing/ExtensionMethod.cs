@@ -99,7 +99,7 @@ namespace Testing
 
         public static int WordCount(this string input)
         {
-            //int length = input.Length;
+            // int length = input.Length;
             string[] words = input.Split(' ');
 
             return words.Length;
