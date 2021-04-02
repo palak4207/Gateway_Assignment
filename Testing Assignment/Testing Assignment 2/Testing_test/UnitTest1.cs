@@ -13,61 +13,61 @@ namespace Testing_test
         [Fact]
         public void Test_AddLowerCase()
         {
-            //Arrange
+            // Arrange
             var input = "PALAK";
             var expectedValue = "palak";
             // Act
             var result = ExtensionMethod.AddLowerCase(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_AddUpperCase()
         {
-            //Arrange
+            // Arrange
             var input = "palak";
             var expectedValue = "PALAK";
             // Act
             var result = ExtensionMethod.AddUpperCase(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void TitleCase()
         {
-            //Arrange
+            // Arrange
            var input = "palak agrawal";
            var expectedValue = "Palak Agrawal";
-            //Act
+            // Act
            var result = ExtensionMethod.TitleCase(input);
 
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_CheckLowerCase()
         {
-            //Arrange
+            // Arrange
             var input = "palak agrawal";
             var expectedValue = true;
             // Act
             var result = ExtensionMethod.CheckLowerCase(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_FirstUpperLetter()
         {
-            //Arrange
+            // Arrange
             var input = "palak";
             var expectedValue = "Palak";
             // Act
             var result = ExtensionMethod.FirstUpperLetter(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
@@ -75,24 +75,24 @@ namespace Testing_test
         [Fact]
         public void Test_CheckUpperCase()
         {
-            //Arrange
+            // Arrange
             var input = "PALAK";
             var expectedValue = true;
             // Act
             var result = ExtensionMethod.CheckUpperCase(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_NumberValidation()
         {
-            //Arrange
+            // Arrange
             var input = "4207";
             var expectedValue = true;
             // Act
             var result = ExtensionMethod.NumberValidation(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
@@ -100,12 +100,12 @@ namespace Testing_test
         [Fact]
         public void Test_LastCharacterRemove()
         {
-            //Arrange
+            // Arrange
             var input = "palak";
             var expectedValue = "pala";
             // Act
             var result = ExtensionMethod.LastCharacterRemove(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
@@ -113,24 +113,24 @@ namespace Testing_test
         [Fact]
         public void Test_WordCount()
         {
-            //Arrange
+            // Arrange
             var input = "palak Agrawal";
             var expectedValue = 2;
             // Act
             var result = ExtensionMethod.WordCount(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
 
         [Fact]
         public void Test_StringToInt()
         {
-            //Arrange
+            // Arrange
             var input = "4207";
             var expectedValue = 4207;
             // Act
             var result = ExtensionMethod.StringToInt(input);
-            //Assert
+            // Assert
             Assert.Equal(expectedValue, result);
         }
     }
