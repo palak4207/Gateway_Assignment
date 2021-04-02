@@ -17,7 +17,7 @@ namespace Testing_test
             var input = "PALAK";
             var expectedValue = "palak";
             // Act
-            var result = ExtensionMethod.AddLowerCase(input);
+            var result = input.AddLowerCase();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -29,7 +29,7 @@ namespace Testing_test
             var input = "palak";
             var expectedValue = "PALAK";
             // Act
-            var result = ExtensionMethod.AddUpperCase(input);
+            var result = input.AddUpperCase();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -41,8 +41,7 @@ namespace Testing_test
            var input = "palak agrawal";
            var expectedValue = "Palak Agrawal";
             // Act
-           var result = ExtensionMethod.TitleCase(input);
-
+           var result = input.TitleCase();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -54,7 +53,7 @@ namespace Testing_test
             var input = "palak agrawal";
             var expectedValue = true;
             // Act
-            var result = ExtensionMethod.CheckLowerCase(input);
+            var result = input.CheckLowerCase();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -66,7 +65,7 @@ namespace Testing_test
             var input = "palak";
             var expectedValue = "Palak";
             // Act
-            var result = ExtensionMethod.FirstUpperLetter(input);
+            var result = input.FirstUpperLetter();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -79,7 +78,7 @@ namespace Testing_test
             var input = "PALAK";
             var expectedValue = true;
             // Act
-            var result = ExtensionMethod.CheckUpperCase(input);
+            var result = input.CheckUpperCase();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -91,7 +90,7 @@ namespace Testing_test
             var input = "4207";
             var expectedValue = true;
             // Act
-            var result = ExtensionMethod.NumberValidation(input);
+            var result = input.NumberValidation();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -104,7 +103,7 @@ namespace Testing_test
             var input = "palak";
             var expectedValue = "pala";
             // Act
-            var result = ExtensionMethod.LastCharacterRemove(input);
+            var result = input.LastCharacterRemove();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -117,7 +116,7 @@ namespace Testing_test
             var input = "palak Agrawal";
             var expectedValue = 2;
             // Act
-            var result = ExtensionMethod.WordCount(input);
+            var result = input.WordCount();
             // Assert
             Assert.Equal(expectedValue, result);
         }
@@ -129,7 +128,7 @@ namespace Testing_test
             var input = "4207";
             var expectedValue = 4207;
             // Act
-            var result = ExtensionMethod.StringToInt(input);
+            var result = input.StringToInt();
             // Assert
             Assert.Equal(expectedValue, result);
         }
