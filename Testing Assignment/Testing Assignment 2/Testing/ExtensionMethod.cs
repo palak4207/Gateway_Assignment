@@ -12,28 +12,34 @@ namespace Testing
 
         public static string AddLowerCase(this string input)
         {
-            StringBuilder str = new StringBuilder(input);
-            int ln = str.Length;
-
-            for (int i = 0; i < ln; i++)
+            string output = "";
+            int ascii = 0;
+            foreach (var ch in input)
             {
-                if (str[i] >= 'A' && str[i] <= 'Z')
-                    str[i] = (char)(str[i] + 32);
+                ascii = (int)ch;
+                if (ascii >= 65 && ascii <= 90)
+                    ascii += 32;
+                else if (ascii >= 97 && ascii <= 122)
+                    ascii -= 32;
+                output += (char)ascii;
             }
-            return str.ToString();
+            return output;
         }
 
         public static string AddUpperCase(this string input)
         {
-            StringBuilder str = new StringBuilder(input);
-            int ln = str.Length;
-
-            for (int i = 0; i < ln; i++)
+            string output = "";
+            int ascii = 0;
+            foreach (var ch in input)
             {
-                if (str[i] >= 'a' && str[i] <= 'z')
-                    str[i] = (char)(str[i] - 32);
+                ascii = (int)ch;
+                if (ascii >= 65 && ascii <= 90)
+                    ascii += 32;
+                else if (ascii >= 97 && ascii <= 122)
+                    ascii -= 32;
+                output += (char)ascii;
             }
-            return str.ToString();
+            return output;
         }
 
 
@@ -41,7 +47,7 @@ namespace Testing
         public static string TitleCase(this string input)
         {
             TextInfo textInfo = new CultureInfo("en-us", false).TextInfo;
-            return textInfo.ToTitleCase(input);
+            return textInfo.ToTitleCase(input.ToLower());
         }
 
         public static bool CheckLowerCase(this String str)
