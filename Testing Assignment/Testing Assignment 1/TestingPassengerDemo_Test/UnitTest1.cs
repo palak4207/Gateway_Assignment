@@ -29,7 +29,7 @@ namespace CLPM_Test
             //Act
             var response = _passengerController.getAllPassenger();
             //Assert
-            Assert.Equal(2, response.Count);
+            Assert.Equal(resultType, response.Count);
         }
 
         [Fact]
