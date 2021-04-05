@@ -24,62 +24,62 @@ namespace CLPM_Test
         [Fact]
         public void Test_GetAllPassengers()
         {
-            //Arrange
+            // Arrange
             var resultType = mockDataRepo.Setup(x => x.getAllPassenger()).Returns(getPassengerList());
-            //Act
+            // Act
             var response = _passengerController.getAllPassenger();
-            //Assert
-            Assert.Equal(resultType, response.Count);
+            // Assert
+            Assert.Equal(resultType.Count, response.Count);
         }
 
         [Fact]
         public void Test_GetUserById()
         {
-            //Arrange
+            // Arrange
             var passenger = new Passenger();
             passenger.PassengerId = Convert.ToInt32(DateTime.Now.Ticks.ToString());
 
             var resultType = mockDataRepo.Setup(x => x.getPassengerByPassengerId(passenger.PassengerId.ToString())).Returns(passenger);
-            //Act
+            // Act
             var result = _passengerController.GetPassenger(passenger.PassengerId.ToString());
-            //Assert
+            // Assert
             Assert.NotNull(result);
         }
 
         [Fact]
         public void Test_AddPassenger()
         {
-            //Arrange
+            // Arrange
             var newpassenger = new Passenger() { PassengerId = Convert.ToInt32(DateTime.Now.Ticks.ToString()), FirstName = "Palak", LastName = "Agrawal", PhoneNumber = "9664560601" };
             var response = mockDataRepo.Setup(x => x.PassengerRegistration(newpassenger)).Returns(AddPassenger());
-            //Act
+            // Act
             var result = _passengerController.PassengerRegistration(newpassenger);
-            //Assert
+            // Assert
             Assert.NotNull(result);
         }
 
         [Fact]
         public void Test_UpdatePassenger()
         {
-            //Act
+            // Act
             var model = JsonConvert.DeserializeObject<Passenger>(File.ReadAllText("Data/UpdatePassenger.json"));
-            //Arrange
+            // Arrange
             var result = mockDataRepo.Setup(x => x.PassengerDetailsUpdate(model)).Returns(model);
             var response = _passengerController.PassengerDetailsUpdate(model);
-            //Assert
+            // Assert
             Assert.Equal(model, response);
         }
 
         [Fact]
         public void Test_DeletePassenger()
         {
-            //Arrange
+            // Arrange
             var passenger = new Passenger();
             passenger.PassengerId = Convert.ToInt32(DateTime.Now.Ticks.ToString());
             var resultType = mockDataRepo.Setup(x => x.PassengerDetailsDelete(passenger.PassengerId.ToString())).Returns(true);
-            //Act
+            // Act
             var response = _passengerController.PassengerDetailsDelete(passenger.PassengerId.ToString());
-            //Assert
+            // Assert
             Assert.True(response);
         }
 
